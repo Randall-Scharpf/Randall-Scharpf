@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="defaults.css" type="text/css">
 </head>
 <body>
-    <div style="margin: auto; width: 700px;">
+    <script>
+    if (window.innerWidth >= 700) {
+        document.write('<div style="margin: auto; width: 700px;">');
+    } else {
+        document.write('<div>');
+    }</script>
         <h1>Official Website of Randall Scharpf</h1>
         <h1 class="sub">A place for my projects, my involvements, and my thoughts</h1>
         <img src="frontpage_portrait.png" alt="Photograph of Randall Scharpf" style="margin: auto; display: table;" width="60%"/>
@@ -28,10 +33,10 @@
         <br/>
         <br/>
         <footer style="background-color: #dddddd;">
-            <div style="margin: auto; display: table;">
+            <div style="margin: auto; display: block; text-align: center;">
                 This site design is copyright Randall Scharpf, 2021, All Rights Reserved.
             </div>
-            <div style="margin: auto; display: table;">
+            <div style="margin: auto; display: block; text-align: center;">
                 External links, images, code, and other artifacts on this site may be under other licences.
             </div>
         </footer>
