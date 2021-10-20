@@ -1,4 +1,5 @@
 - 👋🏼 Hi, I’m @Randall-Scharpf
+- 🌐 I got myself a website! [Check it out here.](https://randallscharpf.com)
 - 🥇 I'm very good with: Java
 - 🥈 I'm good with: Python, Javascript
 - 🥉 I've also used: PHP, C++, Batch
