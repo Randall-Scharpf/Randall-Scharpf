@@ -1,0 +1,19 @@
+h1 {
+    margin-left: 25pt;
+    font-family: cursive;
+    text-decoration: underline;
+    color: #2f6e70;
+}
+
+h1.sub {
+    margin-left: 45px;
+    font-size: 125%;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-style: italic;
+    color: #6ca5a7;
+}
+
+body {
+    font-family: sans-serif;
+}
