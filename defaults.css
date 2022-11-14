@@ -16,4 +16,6 @@ h1.sub {
 
 body {
     font-family: sans-serif;
+    max-width: 700px;
+    margin: auto;
 }
