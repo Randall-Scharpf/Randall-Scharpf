@@ -10,12 +10,12 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0%;
+    /* opacity: 0%; must be in-lined */
 }
 
 .stackedimg .topimg {
     position: relative;
-    opacity: 100%;
+    /* opacity: 100%; must be in-lined */
 }
 
 h1 {
