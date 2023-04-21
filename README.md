@@ -3,7 +3,7 @@
 - 🥇 I'm very good with: Java, Python
 - 🥈 I'm good with: Javascript, C++
 - 🥉 I've also used: PHP, Batch, Haskell, C
-- 🌱 I’m currently learning: about operating systems
+- 🌱 I’m currently learning: Verilog
 - 🤖 I've programmed in environments with: motion profiles, microcontrollers, analog sensors
 - 👀 I’m interested in: quantum computing, embedded system design
 - 🤝 I’m working on: [a CubeSat](bruinspace.com/projects/rapid)
