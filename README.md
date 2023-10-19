@@ -6,7 +6,7 @@
 - 🌱 I’m currently learning: Verilog
 - 🤖 I've programmed in environments with: motion profiles, microcontrollers, analog sensors
 - 👀 I’m interested in: quantum computing, embedded system design
-- 🤝 I’m working on: [a CubeSat](bruinspace.com/projects/rapid)
+- 🤝 I’m working on: [a CubeSat](https://bruinspace.com/projects/rapid)
 - 📫 Message me on Discord!
 - 👨🏻‍💻 Use HackerRank? [So do I!](https://www.hackerrank.com/profile/h1017491)
 
