@@ -7,6 +7,11 @@
     <title>GIS Portfolio for Randall Scharpf</title>
     <link rel="stylesheet" href="../defaults.css" type="text/css">
     <link rel="icon" type="image/png" href="/favicon-196.png">
+    <!-- Add script to the <head> of your page to load the embeddable map component -->
+    <script
+        type="module"
+        src="https://js.arcgis.com/embeddable-components/4.32/arcgis-embeddable-components.esm.js">
+    </script>
 </head>
 <body>
     <h1>GIS Portfolio - Randall Scharpf</h1>
@@ -63,9 +68,16 @@
         </li>
         <li>
             For the final assignment of my Geography 180 class, I made an interactive web map of Great
-            Smoky Mountains National Park. You can see the map and the cartographical choices that make
-            it unique when compared to the official park map on <a href="gsmnp_webmap.html">this page</a>.
+            Smoky Mountains National Park. You can see the cartographical choices that make the map
+            unique when compared to the official park map on <a href="gsmnp_webmap.html">this page</a>.
             <br/><br/>
+            <!-- Add custom element to <body> of your page -->
+            <arcgis-embedded-map
+                style="height:600px;width:700px;"
+                item-id="6e52120c1b3a4e5abc3295c752e18cd8"
+                theme="light"
+                share-enabled portal-url="https://www.arcgis.com" >
+            </arcgis-embedded-map>
         </li>
         <li>
             Although all the above maps were generated with ArcGIS Pro, I've also had the chance to work with
