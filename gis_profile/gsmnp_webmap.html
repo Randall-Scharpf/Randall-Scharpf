@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Smoky Mountains National Park Map</title>
+    <link rel="stylesheet" href="../defaults.css" type="text/css">
+    <link rel="icon" type="image/png" href="/favicon-196.png">
+
+    <!-- Add script to the <head> of your page to load the embeddable map component -->
+    <script type="module" src="https://js.arcgis.com/embeddable-components/4.32/arcgis-embeddable-components.esm.js"></script>
+</head>
+<body>
+    <h2>Interative Great Smoky Mountains National Park Webmap</h2>
+    <!-- Add custom element to <body> of your page -->
+    <arcgis-embedded-map style="height:600px;width:700px;" item-id="6e52120c1b3a4e5abc3295c752e18cd8" theme="light" share-enabled portal-url="https://www.arcgis.com" ></arcgis-embedded-map>
+    <h2>Styling Justifications</h2>
+    To improve the National Park Service maps, I created a few simple color changes.
+    <ol>
+        <li>
+            To decrease the prevalence of green as a base color in and around the parks, I...
+            <ul>
+                <li>
+                    converted national forests from a light green color (representing the leaves of the trees) to a
+                    light brown color (representing the trunks and branches of the trees).
+                </li>
+                <li>
+                    made the same conversion on the Appalachian Trail.
+                </li>
+                <li>
+                    recolored the park itself to a mild pink color. This color is not often found in nature and
+                    indicates that attention should be drawn to this region of the map, and this is the subject of the
+                    map, so this is an appropriate indication.
+                </li>
+            </ul>
+        </li>
+        <li>
+            To more closely align with common road maps and atlases, I...
+            <ul>
+                <li>
+                    converted the primary roads to a red color.
+                </li>
+                <li>
+                    separated secondary roads and dirt roads into thin black lines and thin gray lines to emphasize
+                    their lesser importance to navigation.
+                </li>
+            </ul>
+        </li>
+        <li>
+            I recolored the Cherokee Indian Reservation to match the other populated areas in the map and to have a
+            non-orange color that clashes less with the new road styling.
+        </li>
+    </ol>
+    I also created a number of changes to the iconography of the map to add texture and improve its overall focus.
+    <ol>
+        <li>
+            The mountain peaks on the map are shown just as dots with labels on the park map. However, with all the
+            types of items on the map, and with nondescript peak names like “Spence Field” included, it helps the clarity
+            and visual appeal of the map to convert the points into mountain-like icons.
+        </li>
+        <li>
+            The visitor centers are shown just as dots with labels on the park map. Given the utility of a visitor center
+            to a new user for getting information about the park, finding these points quickly is important. Therefore,
+            I gave each visitor center an “information” icon to help it stand out in the map.
+        </li>
+        <li>
+            I changed the style of the highway labels. Although navigation to and from a national park is important, it's
+            not the focus of the map, so the highway labels should be relatively minimal. The park map, as it stands, labels
+            state highways and federal highways with particular shield types and gives multiple names for many roads which
+            are governed by multiple authorities. I kept these roads in my map but labeled only the federal highways (since
+            the park system is a federal system and these are the most important roads). I also updated the styling of the
+            labels from complex shield shapes to simple squares to reduce the focus on the road systems outside the park.
+        </li>
+    </ol>
+    To improve the labeling in the map, I worked to reduce the overall label density and improve readability. I eliminated...
+    <ol>
+        <li>
+            the elevations of the highest peaks.
+        </li>
+        <li>
+            some of the road labels within the park.
+        </li>
+        <li>
+            state boundaries.
+        </li>
+        <li>
+            minor city, navigation, and physical feature labels outside the park.
+        </li>
+    </ol>
+</body>
+</html>
