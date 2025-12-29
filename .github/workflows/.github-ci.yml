@@ -24,7 +24,7 @@ jobs:
         needs: create_website
         environment:
             name: github-pages
-            url: www.randallscharpf.com
+            url: https://www.randallscharpf.com
         permissions:
             pages: write
             id-token: write
