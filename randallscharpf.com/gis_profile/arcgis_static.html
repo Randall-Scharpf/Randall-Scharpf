@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArcGIS Maps and Reports | Randall Scharpf</title>
+    <link rel="stylesheet" href="../defaults.css" type="text/css">
+    <link rel="icon" type="image/png" href="/favicon-196.png">
+</head>
+<body>
+    <h1>Maps and Reports from ArcGIS</h1>
+    <img src="UsaCountiesMedianIncome.png" alt="Map showing median income by county" style="width: 100%;"/>
+    <p>
+        In my Geography 180 class, I had the chance to look at the median income in every county
+        across the United States by creating this map. (<a href="UsaCountiesMedianIncome.pdf">View&nbsp;as&nbsp;PDF</a>)
+    </p>
+    <br/><br/>
+
+    <img src="LaCountyLandSlope.png" alt="Map showing steepness of land in LA county" style="width: 100%;"/>
+    <p>
+        In my Geography 181A class, we learned to analyze the slope of a section of land. I made a map of the percent grade
+        of the area within Los Angeles County to for an example of what that looks like. (<a href="LaCountyLandSlope.pdf">View&nbsp;as&nbsp;PDF</a>)
+    </p>
+    <br/><br/>
+
+    <img src="BearMountainNaipImagery.png" alt="Map showing Bear Mountain ski pistes" style="width: 100%;"/>
+    <p>
+        I used the aforementioned slope analysis, along with a number of the other techniques I learned in my classes
+        in that class, to attempt to compute the difficulties of a variety of ski pistes from resorts
+        around the country. As a part of that, I made a map of Bear Mountain Ski Resort from satellite
+        imagery annotated with the locations of each of the ski runs listed on the official resort map.
+        (<a href="BearMountainNaipImagery.pdf">View&nbsp;as&nbsp;PDF</a>)
+    </p>
+    <p>
+        For details on the methods and results of that project, you can read
+        <a href="VarianceBetweenPisteDifficultyRatingsByResort.pdf">my full report</a>, which includes the ski piste map.
+        The coolest part of the report are Table 6, Table 7, Table 8, and Table 9, which estimate piste difficulties as
+        real numbers instead of as vague categories. Since the difficulty model is based on the ratings at Bear Mountain,
+        the decimal difficulty estimates reflect their trails the best.
+    </p>
+    <table class="compact">
+        <tr>
+            <th style="width: 30%">Run Name</th>
+            <th style="width: 30%">Difficulty</th>
+            <th style="width: 40%">Re-rating</th>
+        </tr>
+        <tr>    <td>Learning Curve</td>     <td>1 (Green Circle)</td>       <td>1.35 (Hard Green)</td>      </tr>
+        <tr>    <td>Easy Street</td>        <td>1 (Green Circle)</td>       <td>0.67 (Easy Green)</td>      </tr>
+        <tr>    <td>Inspiration</td>        <td>1 (Green Circle)</td>       <td>0.65 (Easy Green)</td>      </tr>
+        <tr>    <td>Amusement Park</td>     <td>1 (Green Circle)</td>       <td>1.20 (Moderate Green)</td>          </tr>
+        <tr>    <td>The Gulch</td>          <td>1 (Green Circle)</td>       <td>1.22 (Hard Green)</td>      </tr>
+        <tr>    <td>Park Run (Lower)</td>   <td>1 (Green Circle)</td>       <td>1.36 (Hard Green)</td>      </tr>
+        <tr>    <td>Back Yard</td>          <td>1 (Green Circle)</td>       <td>1.57 (Easy Blue)</td>       </tr>
+        <tr>    <td>Accelerator</td>        <td>2 (Blue Square)</td>        <td>2.26 (Hard Blue)</td>       </tr>
+        <tr>    <td>Ripcord</td>    <td>2 (Blue Square)</td>        <td>2.01 (Moderate Blue)</td>           </tr>
+        <tr>    <td>Silver Connection</td>  <td>2 (Blue Square)</td>        <td>1.73 (Easy Blue)</td>       </tr>
+        <tr>    <td>Park Run (Upper)</td>   <td>2 (Blue Square)</td>        <td>2.36 (Hard Blue)</td>       </tr>
+        <tr>    <td>Expressway</td>         <td>2 (Blue Square)</td>        <td>2.08 (Moderate Blue)</td>           </tr>
+        <tr>    <td>Boneyard</td>           <td>2 (Blue Square)</td>        <td>2.11 (Moderate Blue)</td>           </tr>
+        <tr>    <td>Park Run (Face)</td>    <td>2 (Blue Square)</td>        <td>2.19 (Moderate Blue)</td>           </tr>
+        <tr>    <td>Outlaw's Alley</td>     <td>2 (Blue Square)</td>        <td>1.63 (Easy Blue)</td>       </tr>
+        <tr>    <td>Street Scene</td>       <td>2 (Blue Square)</td>        <td>2.06 (Moderate Blue)</td>           </tr>
+        <tr>    <td>Pipeline</td>           <td>2 (Blue Square)</td>        <td>2.20 (Moderate Blue)</td>           </tr>
+        <tr>    <td>Hidden Valley</td>      <td>2 (Blue Square)</td>        <td>1.27 (Hard Green)</td>      </tr>
+        <tr>    <td>Central Park</td>       <td>2 (Blue Square)</td>        <td>2.16 (Moderate Blue)</td>           </tr>
+        <tr>    <td>Exhibition</td>         <td>3 (Black Diamond)</td>      <td>2.92 (Moderate Black)</td>          </tr>
+        <tr>    <td>Showtime</td>           <td>3 (Black Diamond)</td>      <td>3.05 (Moderate Black)</td>          </tr>
+        <tr>    <td>Rip's Run</td>          <td>3 (Black Diamond)</td>      <td>3.08 (Moderate Black)</td>          </tr>
+        <tr>    <td>Outlaw</td>     <td>3 (Black Diamond)</td>      <td>2.83 (Moderate Black)</td>          </tr>
+        <tr>    <td>Gambler</td>    <td>3 (Black Diamond)</td>      <td>2.56 (Easy Black)</td>      </tr>
+        <tr>    <td>Grizzly</td>    <td>3 (Black Diamond)</td>      <td>2.83 (Moderate Black)</td>          </tr>
+        <tr>    <td>Geronimo</td>           <td>4 (Double Black)</td>       <td>3.53 (Easy Double Black)</td>       </tr>
+        <tr>    <td>The Wedge</td>          <td>4 (Double Black)</td>       <td>4.11 (Moderate Double Black)</td>   </tr>
+    </table>
+    <p style="text-align: center;"><i>Table 6 from the full report</i></p>
+    <br/>
+    <auto-footer></auto-footer>
+</body>
