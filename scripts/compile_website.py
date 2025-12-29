@@ -31,10 +31,10 @@ class HtmlPostProcessor:
         output_file.close()
 
 if __name__ == "__main__":
-    proc = HtmlPostProcessor(os.path.join("randallscharpf.com", "footer"))
+    proc = HtmlPostProcessor(os.path.join("randallscharpf.com", "FOOTER"))
     output_path = os.path.join("build", "website")
     shutil.copytree("randallscharpf.com", output_path, dirs_exist_ok=True)
-    os.remove(os.path.join(output_path, "footer"))
+    os.remove(os.path.join(output_path, "FOOTER"))
     website_files = listdir_recursive(output_path)
 
     for html_file in filter((lambda website_file: os.path.splitext(website_file)[1] == ".html"), website_files):
