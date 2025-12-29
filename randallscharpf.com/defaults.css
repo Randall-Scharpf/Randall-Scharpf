@@ -1,0 +1,67 @@
+img {
+    position: relative;
+    margin: auto;
+    display: grid;
+    width: 60%;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 200%;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: bold;
+}
+
+.subtitle {
+    font-size: 60%;
+    text-align: center;
+    font-family: sans-serif;
+    font-style: italic;
+    opacity: 80%;
+}
+
+footer {
+    padding-bottom: 10px;
+}
+
+footer div {
+    background-color: #dddddd;
+    padding: 4px;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 700px;
+    margin: auto;
+}
+
+li {
+    padding-bottom: 4px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    padding: 10px;
+    outline: 1px solid black;
+    background-color: lightgray;
+}
+
+td {
+    text-align: left;
+    padding: 10px;
+    min-width: 15%;
+    outline: 1px solid black;
+}
+
+table.compact td {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
