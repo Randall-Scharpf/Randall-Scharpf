@@ -19,22 +19,30 @@ def read_file(filename, encoding="UTF-8"):
     return result
 
 class HtmlPostProcessor:
-    def __init__(self, footer_template, encoding="UTF-8"):
+    def __init__(self, header_template, footer_template, encoding="UTF-8"):
+        self.HEADER = read_file(header_template)
         self.FOOTER = read_file(footer_template)
         self.encoding = encoding
 
     def postprocess_file(self, input_path, output_path):
         input_text = read_file(input_path, self.encoding)
-        output_text = input_text.replace("<auto-footer></auto-footer>", self.FOOTER)
+        output_text = input_text
+
+        output_text = output_text.replace("<DefaultHead/>", self.HEADER)
+        output_text = output_text.replace("<DefaultFooter/>", self.FOOTER)
+
         output_file = open(output_path, "w", encoding=self.encoding)
         output_file.write(output_text)
         output_file.close()
 
 if __name__ == "__main__":
-    proc = HtmlPostProcessor(os.path.join("randallscharpf.com", "FOOTER"))
+    proc = HtmlPostProcessor(
+        os.path.join("randallscharpf.com", "templates", "DEFAULT-HEAD"),
+        os.path.join("randallscharpf.com", "templates", "DEFAULT-FOOTER")
+    )
     output_path = os.path.join("build", "website")
     shutil.copytree("randallscharpf.com", output_path, dirs_exist_ok=True)
-    os.remove(os.path.join(output_path, "FOOTER"))
+    shutil.rmtree(os.path.join(output_path, "templates"))
     website_files = listdir_recursive(output_path)
 
     for html_file in filter((lambda website_file: os.path.splitext(website_file)[1] == ".html"), website_files):
