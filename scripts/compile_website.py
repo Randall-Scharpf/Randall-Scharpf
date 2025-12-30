@@ -1,6 +1,8 @@
 import os
 import shutil
 
+from datetime import datetime
+
 def listdir_recursive(root):
     depth_one = os.listdir(root)
     result = []
@@ -47,3 +49,7 @@ if __name__ == "__main__":
 
     for html_file in filter((lambda website_file: os.path.splitext(website_file)[1] == ".html"), website_files):
         proc.postprocess_file(html_file, html_file)
+
+    homepage = open(os.path.join(output_path, "index.html"), "a")
+    homepage.write(f"<!-- Deployed at {datetime.now} -->\n")
+    homepage.close()
