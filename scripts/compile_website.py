@@ -51,5 +51,6 @@ if __name__ == "__main__":
         proc.postprocess_file(html_file, html_file)
 
     homepage = open(os.path.join(output_path, "index.html"), "a")
-    homepage.write(f"<!-- Deployed at {datetime.now} -->\n")
+    homepage.write(f"<!-- Deployed at {datetime.now()} -->\n")
     homepage.close()
+
