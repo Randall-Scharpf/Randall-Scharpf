@@ -31,3 +31,22 @@ jobs:
             id-token: write
         steps:
           - uses: actions/deploy-pages@v4
+
+    verify_website:
+        strategy:
+            matrix:
+                url:
+                  - "http://randallscharpf.com"
+                  - "https://randallscharpf.com"
+                  - "http://www.randallscharpf.com"
+                  - "https://www.randallscharpf.com"
+        runs-on: ubuntu-latest
+        needs: deploy_website
+        steps:
+          - uses: actions/download-artifact@v7
+            with:
+                name: github-pages
+          - run: |
+                wget ${matrix.url} 2>wget.log
+                grep ':443' wget.log
+                diff github-pages/index.html index.html
