@@ -34,6 +34,7 @@ jobs:
 
     verify_website:
         strategy:
+            fail-fast: false
             matrix:
                 url:
                   - "http://randallscharpf.com"
@@ -52,5 +53,6 @@ jobs:
                 wget ${{matrix.url}} 2>&1 | tee wget.log
                 grep ':443' wget.log >/dev/null
                 diff deploy-artifact/index.html index.html
+
 
 
