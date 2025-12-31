@@ -47,6 +47,7 @@ jobs:
             with:
                 name: github-pages
           - run: |
-                wget ${matrix.url} 2>wget.log
+                wget ${{matrix.url}} 2>wget.log
                 grep ':443' wget.log
                 diff github-pages/index.html index.html
+
