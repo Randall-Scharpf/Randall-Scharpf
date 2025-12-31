@@ -47,8 +47,11 @@ jobs:
             with:
                 name: github-pages
           - run: |
+                mkdir deploy-artifact
+                tar -xf artifact.tar -C deploy-artifact
                 ls -R
                 wget ${{matrix.url}} 2>wget.log
                 ls -R
                 grep ':443' wget.log
-                diff github-pages/index.html index.html
+                diff deploy-artifact/index.html index.html
+
